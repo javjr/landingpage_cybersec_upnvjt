@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBERSEC UPNVJT — Forum Mahasiswa Informatika</title>
+<meta name="description" content="Wadah bagi mahasiswa UPN Veteran Jawa Timur yang ingin berfokus dalam bidang Cybersecurity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+
+<a class="skip-link" href="#main">Langsung ke konten</a>
+
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="brand">
+      <svg class="brand__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2L4 5V11C4 16.5 7.4 21.2 12 22.5C16.6 21.2 20 16.5 20 11V5L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+      <span>CYBERSEC<span class="brand__accent">UPNVJT</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link is-active" data-nav>Home</a>
+      <a href="#forum" class="nav-link" data-nav>Forum</a>
+      <a href="#pillars" class="nav-link" data-nav>Pillars</a>
+      <a href="#register" class="nav-link" data-nav>Register</a>
+      <a href="#contact" class="nav-link" data-nav>Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <div class="lang-toggle" role="group" aria-label="Pilih bahasa">
+        <button type="button" class="lang-toggle__btn is-active" data-lang="id">ID</button>
+        <span class="lang-toggle__sep">|</span>
+        <button type="button" class="lang-toggle__btn" data-lang="en">EN</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+
+  <section class="hero" id="home">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          FORUM<br>
+          MAHASISWA<br>
+          INFORMATIKA<br>
+          <span class="hero__title-glow">CYBERSEC<br>UPNVJT</span>
+        </h1>
+        <p class="hero__lead">Wadah bagi mahasiswa UPN Veteran Jawa Timur yang ingin berfokus dalam bidang Cybersecurity.</p>
+        <p class="hero__sub">Forum belajar terbuka bagi mahasiswa informatika UPNVJT</p>
+        <a href="#forum" class="btn btn--outline">
+          <span>What is CYBERSECUPNVJT?</span>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__art">
+        <div class="hero__frame hero__frame--back"></div>
+        <div class="hero__frame hero__frame--front">
+          <img src="logo.png" alt="CYBERSEC UPNVJT Logo" class="hero__custom-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="forum">
+    <h2 class="section__title">What is in CYBERSECUPNVJT</h2>
+    <div class="section__rule" aria-hidden="true"></div>
+
+    <div class="bento" id="pillars">
+      <article class="bento__card bento__card--lg">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2L4 5V11C4 16.5 7.4 21.2 12 22.5C16.6 21.2 20 16.5 20 11V5L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Defensive Security</h3>
+        <p>Memahami sistem pertahanan dalam keamanan</p>
+      </article>
+
+      <article class="bento__card bento__card--lg">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 6L2 12L8 18M16 6L22 12L16 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Programming</h3>
+        <p>Sejalan dengan bidang spesialisasi yang diambil</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Fundamental</h3>
+        <p>Keamanan siber</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 20C3.3 16.7 5.5 15 8 15C10.5 15 12.7 16.7 13.5 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="17" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/><path d="M15 20C15.6 17.5 17.1 16.2 18.8 16.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Relation</h3>
+        <p>Networking sesama cybersecurity</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 18H17C19 18 20.5 16.5 20.5 14.5C20.5 12.8 19.3 11.4 17.7 11.1C17.4 8.2 15 6 12 6C9.4 6 7.2 7.7 6.4 10C4.5 10.3 3 12 3 14C3 16.2 4.8 18 7 18Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>Cloud</h3>
+        <p>Memahami sistem cloud yang krusial dalam cybersecurity</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M11 18.5H13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>Social Engineering</h3>
+        <p>Memahami psikologi manusia dalam aktivitas digital</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="19" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="19" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7V13M12 13L6.5 17.3M12 13L17.5 17.3" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Networking</h3>
+        <p>Mempelajari jaringan yang krusial dalam cybersecurity</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 3H14L19 8V19C19 20.1 18.1 21 17 21H6C4.9 21 4 20.1 4 19V5C4 3.9 4.9 3 6 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 13L11 15L15 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>CTF</h3>
+        <p>Asah kemampuan lewat kompetisi CTF</p>
+      </article>
+
+      <article class="bento__card">
+        <svg class="bento__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3L21 8V13C21 17.6 17.1 21.6 12 23C6.9 21.6 3 17.6 3 13V8L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 8V12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15.5" r="0.9" fill="currentColor"/></svg>
+        <h3>Offensive Security</h3>
+        <p>Memahami cara menyerang dan menemukan celah dalam sistem</p>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="section" id="why">
+    <h2 class="section__title">Why Join Us</h2>
+    <div class="section__rule" aria-hidden="true"></div>
+
+    <div class="why-grid">
+      <article class="why-card">
+        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="8" r="5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12.5L6 21L12 18L18 21L15.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>CTF &amp; Competition</h3>
+        <p>Persiapan bareng buat ikut lomba Capture The Flag (CTF)</p>
+      </article>
+
+      <article class="why-card">
+        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2L4 5V11C4 16.5 7.4 21.2 12 22.5C16.6 21.2 20 16.5 20 11V5L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Defensive Security</h3>
+        <p>Belajar cara mengamankan sistem dan menganalisis serangan siber (Blue Team)</p>
+      </article>
+
+      <article class="why-card">
+        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 17L9 11L13 15L21 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7H21V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Mulai dari 0</h3>
+        <p>Belajar bareng dan ramah pemula. Nggak wajib punya background IT!</p>
+      </article>
+
+      <article class="why-card">
+        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 12L11 14L15.5 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Praktek Bareng</h3>
+        <p>Nggak cuma teori kaku, kita bakal langsung hands-on lab bareng-bareng</p>
+      </article>
+
+      <article class="why-card">
+        <svg class="why-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Offensive Security</h3>
+        <p>Belajar cara mencari celah keamanan sistem dan dasar ethical hacking (Red Team)</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--register" id="register">
+    <h2 class="section__title">Register Now</h2>
+    <div class="section__rule" aria-hidden="true"></div>
+    <p class="register__lead">Isi data kamu di bawah ini untuk bergabung dengan forum CYBERSECUPNVJT. Prosesnya cepat dan datamu terenkripsi.</p>
+
+    <div class="register__wrap">
+      <form id="cybersecForm" class="register-form" novalidate>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required autocomplete="email">
+          <span class="field__error" data-error-for="email"></span>
+        </div>
+
+        <div class="field">
+          <label for="fullName">Full Name / Nama Lengkap</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Nama lengkap kamu" required autocomplete="name">
+          <span class="field__error" data-error-for="fullName"></span>
+        </div>
+
+        <div class="field field--half">
+          <label for="npm">NPM / Student ID</label>
+          <input type="text" id="npm" name="npm" placeholder="e.g. 23081010xxx" inputmode="numeric" pattern="[0-9]+" required>
+          <span class="field__error" data-error-for="npm"></span>
+        </div>
+
+        <div class="field field--half">
+          <label for="angkatan">Class Year / Angkatan</label>
+          <select id="angkatan" name="angkatan" required>
+            <option value="" disabled selected>Pilih angkatan</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+          <span class="field__error" data-error-for="angkatan"></span>
+        </div>
+
+        <div class="field">
+          <label for="specialization">Specialization Interest / Bidang Spesialisasi <span class="field__optional">(opsional)</span></label>
+          <select id="specialization" name="specialization">
+            <option value="" selected>Belum yakin / bebas</option>
+            <option value="Offensive Security (Red Team)">Offensive Security (Red Team)</option>
+            <option value="Defensive Security (Blue Team)">Defensive Security (Blue Team)</option>
+            <option value="CTF & Kompetisi">CTF &amp; Kompetisi</option>
+            <option value="Belajar dari Nol">Belajar dari Nol</option>
+          </select>
+        </div>
+
+        <div class="field field--half">
+          <label for="whatsapp">WhatsApp Number / No. HP</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" required autocomplete="tel">
+          <span class="field__error" data-error-for="whatsapp"></span>
+        </div>
+
+        <div class="field field--half">
+          <label for="github">GitHub <span class="field__optional">(opsional)</span></label>
+          <input type="text" id="github" name="github" placeholder="username atau URL profil">
+        </div>
+
+        <div class="field field--full">
+          <button type="submit" class="btn btn--submit" id="submitBtn">
+            <span class="btn__spinner" aria-hidden="true"></span>
+            <span class="btn__label">SUBMIT REGISTRATION</span>
+          </button>
+          <p class="register__privacy">Data kamu hanya digunakan untuk keperluan forum CYBERSECUPNVJT dan tidak dibagikan ke pihak ketiga.</p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+
+
+<div class="toast" id="successToast" role="status" aria-live="polite">
+  <svg class="toast__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M8 12.5L10.8 15L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <div class="toast__text">
+    <p class="toast__title">Registrasi berhasil</p>
+    <p class="toast__sub">Sampai jumpa di forum, salam aman!</p>
+  </div>
+</div>
+
+
+<footer class="footer" id="contact">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a href="#home" class="brand">
+        <svg class="brand__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2L4 5V11C4 16.5 7.4 21.2 12 22.5C16.6 21.2 20 16.5 20 11V5L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <span>CYBERSEC<span class="brand__accent">UPNVJT</span></span>
+      </a>
+      <p>Forum Cybersecurity Informatika UPNVJT</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigation</h4>
+      <a href="#home">Beranda</a>
+      <a href="#forum">Forum</a>
+      <a href="#why">Why join us</a>
+      <a href="#register">Register</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Pillars</h4>
+      <a href="#pillars">Defensive Security</a>
+      <a href="#pillars">Offensive Security</a>
+      <a href="#pillars">CTF &amp; Competition</a>
+      <a href="#pillars">Hands-on Lab</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      
+      <!-- Instagram -->
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <a href="https://instagram.com/cybersecupnvjt" target="_blank" style="color: var(--muted); text-decoration: none;">@cybersecupnvjt</a>
+      </div>
+
+      <!-- WhatsApp -->
+      <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 16px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <div style="display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 0.9rem;">
+          <span>0813 1207 2060</span>
+          <span>0834 2289 3450</span>
+        </div>
+      </div>
+
+      <div class="footer__socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 10V17M8 7V7.01M12 17V13C12 11.5 12.8 10.5 14 10.5C15.2 10.5 16 11.5 16 13V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 5.5C20.3 5.9 19.5 6.1 18.7 6.2C19.6 5.7 20.2 4.9 20.5 3.9C19.7 4.4 18.8 4.7 17.9 4.9C17.1 4.1 16 3.6 14.8 3.6C12.5 3.6 10.7 5.5 10.7 7.7C10.7 8 10.7 8.3 10.8 8.6C7.4 8.4 4.3 6.8 2.3 4.2C2 4.8 1.8 5.5 1.8 6.2C1.8 7.6 2.5 8.8 3.6 9.5C2.9 9.5 2.3 9.3 1.8 9V9.1C1.8 11 3.2 12.6 5 13C4.7 13.1 4.3 13.1 4 13.1C3.8 13.1 3.6 13.1 3.4 13C3.8 14.6 5.3 15.8 7 15.8C5.7 16.8 4 17.4 2.2 17.4C1.9 17.4 1.6 17.4 1.3 17.3C3 18.5 5.1 19.1 7.3 19.1C14.8 19.1 18.9 12.9 18.9 7.5C18.9 7.3 18.9 7.1 18.9 7C19.7 6.4 20.4 5.7 21 5.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.6 2 12.3C2 16.8 4.9 20.6 8.8 22C9.3 22.1 9.5 21.8 9.5 21.5V19.7C6.9 20.3 6.3 18.4 6.3 18.4C5.9 17.3 5.3 17 5.3 17C4.4 16.4 5.4 16.4 5.4 16.4C6.4 16.5 7 17.5 7 17.5C7.9 19 9.3 18.6 9.8 18.3C9.9 17.7 10.2 17.3 10.4 17C8.3 16.8 6.1 16 6.1 12.2C6.1 11.1 6.5 10.3 7 9.6C6.9 9.4 6.5 8.4 7.1 7C7.1 7 8 6.7 9.5 7.8C10.1 7.6 10.8 7.5 11.5 7.5C12.2 7.5 12.9 7.6 13.5 7.8C15 6.7 15.9 7 15.9 7C16.5 8.4 16.1 9.4 16 9.6C16.5 10.3 16.9 11.1 16.9 12.2C16.9 16 14.7 16.8 12.6 17C12.9 17.3 13.2 18 13.2 19V21.5C13.2 21.8 13.4 22.1 13.9 22C17.8 20.6 20.7 16.8 20.7 12.3C20.7 6.6 16.2 2 12 2Z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 CYBERSECUPNVJT. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

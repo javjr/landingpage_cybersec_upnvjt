@@ -1,0 +1,32 @@
+# Environment & secrets
+.env
+.env.*
+*.env
+secrets.json
+config.local.js
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Apps Script / clasp
+.clasp.json
+.clasprc.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
