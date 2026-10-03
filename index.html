@@ -205,72 +205,21 @@
   <section class="section section--register" id="register">
     <h2 class="section__title" data-reveal data-i18n="registerTitle">Register Now</h2>
     <div class="section__rule" aria-hidden="true"></div>
-    <p class="register__lead" data-reveal data-i18n="registerLead">Isi data kamu di bawah ini untuk bergabung dengan forum CYBERSECUPNVJT. Prosesnya cepat dan datamu terenkripsi.</p>
+    <p class="register__lead" data-reveal data-i18n="registerLead">Pendaftaran untuk periode ini telah berakhir. Terima kasih atas antusiasme kamu!</p>
 
     <div class="register__wrap">
-      <form id="cybersecForm" class="register-form" novalidate>
-
-        <div class="field">
-          <label for="email" data-i18n="labelEmail">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="nama@email.com" required autocomplete="email">
-          <span class="field__error" data-error-for="email"></span>
+      <div class="register-closed" data-reveal>
+        <div class="register-closed__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="10" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="12" cy="15" r="1.4" fill="currentColor"/>
+          </svg>
         </div>
-
-        <div class="field">
-          <label for="fullName" data-i18n="labelFullName">Full Name / Nama Lengkap</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Nama lengkap kamu" required autocomplete="name">
-          <span class="field__error" data-error-for="fullName"></span>
-        </div>
-
-        <div class="field field--half">
-          <label for="npm" data-i18n="labelNpm">NPM / Student ID</label>
-          <input type="text" id="npm" name="npm" placeholder="e.g. 23081010xxx" inputmode="numeric" pattern="[0-9]+" required>
-          <span class="field__error" data-error-for="npm"></span>
-        </div>
-
-        <div class="field field--half">
-          <label for="angkatan" data-i18n="labelAngkatan">Class Year / Angkatan</label>
-          <select id="angkatan" name="angkatan" required>
-            <option value="" disabled selected data-i18n="selectAngkatanDefault">Pilih angkatan</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-          </select>
-          <span class="field__error" data-error-for="angkatan"></span>
-        </div>
-
-        <div class="field">
-          <label for="specialization"><span data-i18n="labelSpecialization">Specialization Interest / Bidang Spesialisasi</span> <span class="field__optional">(opsional)</span></label>
-          <select id="specialization" name="specialization">
-            <option value="" selected data-i18n="specDefault">Belum yakin / bebas</option>
-            <option value="Offensive Security (Red Team)">Offensive Security (Red Team)</option>
-            <option value="Defensive Security (Blue Team)">Defensive Security (Blue Team)</option>
-            <option value="CTF &amp; Kompetisi">CTF &amp; Kompetisi</option>
-            <option value="Belajar dari Nol">Belajar dari Nol</option>
-          </select>
-        </div>
-
-        <div class="field field--half">
-          <label for="whatsapp" data-i18n="labelWhatsapp">WhatsApp Number / No. HP</label>
-          <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" required autocomplete="tel">
-          <span class="field__error" data-error-for="whatsapp"></span>
-        </div>
-
-        <div class="field field--half">
-          <label for="github"><span data-i18n="labelGithub">GitHub / Portfolio</span> <span class="field__optional">(opsional)</span></label>
-          <input type="text" id="github" name="github" placeholder="username atau URL profil">
-        </div>
-
-        <div class="field field--full">
-          <button type="submit" class="btn btn--submit" id="submitBtn">
-            <span class="btn__spinner" aria-hidden="true"></span>
-            <span class="btn__label" data-i18n="submitBtn">SUBMIT REGISTRATION</span>
-          </button>
-          <p class="register__privacy" data-i18n="privacyText">Data kamu hanya digunakan untuk keperluan forum CYBERSECUPNVJT dan tidak dibagikan ke pihak ketiga.</p>
-        </div>
-
-      </form>
+        <h3 class="register-closed__title" data-i18n="registerClosedTitle">Pendaftaran Anggota Telah Ditutup</h3>
+        <p class="register-closed__text" data-i18n="registerClosedThanks">Terima kasih atas antusiasme dan minat luar biasa dari seluruh calon pendaftar. Kami sangat mengapresiasi dukungan kamu terhadap CYBERSEC UPNVJT.</p>
+        <p class="register-closed__text" data-i18n="registerClosedInfo">Nantikan informasi pendaftaran gelombang berikutnya melalui forum ini serta media sosial resmi kami di Instagram @cybersecupnvjt.</p>
+      </div>
     </div>
   </section>
 

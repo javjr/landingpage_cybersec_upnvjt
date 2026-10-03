@@ -56,7 +56,10 @@
       whyOffensiveTitle: 'Eksplorasi Offensive Security',
       whyOffensiveDesc: 'Pencarian celah keamanan dan dasar ethical hacking secara bertanggung jawab.',
       registerTitle: 'Pendaftaran Anggota',
-      registerLead: 'Isi formulir di bawah ini untuk bergabung dengan CYBERSEC UPNVJT. Proses cepat dan data dijamin aman.',
+      registerLead: 'Pendaftaran untuk periode ini telah berakhir. Terima kasih atas antusiasme kamu!',
+      registerClosedTitle: 'Pendaftaran Anggota Telah Ditutup',
+      registerClosedThanks: 'Terima kasih atas antusiasme dan minat luar biasa dari seluruh calon pendaftar. Kami sangat mengapresiasi dukungan kamu terhadap CYBERSEC UPNVJT.',
+      registerClosedInfo: 'Nantikan informasi pendaftaran gelombang berikutnya melalui forum ini serta media sosial resmi kami di Instagram @cybersecupnvjt.',
       labelEmail: 'Alamat Email',
       labelFullName: 'Nama Lengkap',
       labelNpm: 'NPM (Nomor Pokok Mahasiswa)',
@@ -128,7 +131,10 @@
       whyOffensiveTitle: 'Offensive Security',
       whyOffensiveDesc: 'Learn responsible vulnerability identification, exploit concepts, and ethical hacking (Red Team).',
       registerTitle: 'Register Now',
-      registerLead: 'Fill out your details below to join the CYBERSEC UPNVJT forum. Fast process with encrypted transmission.',
+      registerLead: 'Registration for this period has ended. Thank you for your enthusiasm!',
+      registerClosedTitle: 'Member Registration Has Closed',
+      registerClosedThanks: 'Thank you for the enthusiasm and interest from all prospective registrants. We truly appreciate your support for CYBERSEC UPNVJT.',
+      registerClosedInfo: 'Stay tuned for the next registration wave through this forum and our official social media on Instagram @cybersecupnvjt.',
       labelEmail: 'Email Address',
       labelFullName: 'Full Name',
       labelNpm: 'NPM / Student ID',
@@ -315,6 +321,7 @@
   const toast = document.getElementById('successToast');
 
   function showFieldError(name, message) {
+    if (!form) return;
     const input = form.elements[name];
     const field = input ? input.closest('.field') : null;
     const errorEl = form.querySelector(`[data-error-for="${name}"]`);
@@ -324,6 +331,7 @@
 
  function validateForm(data) {
  const validators = getValidators();
+  if (!form) return { valid: false, firstInvalid: null };
  let firstInvalid = null;
  let valid = true;
 
